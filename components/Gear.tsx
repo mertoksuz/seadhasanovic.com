@@ -36,15 +36,19 @@ export default function Gear() {
   ];
 
   return (
-    <section id="gear" className="relative border-b border-white/5 py-24">
+    <section id="gear" className="relative border-b border-white/5 py-28">
       <div className="container-x">
-        <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow justify-center">{t.gear.eyebrow}</span>
-          <h2 className="section-title mt-4">
+        <div className="section-num mb-10">
+          <span className="num">/ 03</span>
+          <span>{t.gear.eyebrow}</span>
+        </div>
+
+        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+          <h2 className="section-title max-w-2xl">
             {t.gear.title1}{" "}
             <span className="text-rival-500">{t.gear.titleAccent}</span>
           </h2>
-          <p className="mt-4 text-white/60">{t.gear.desc}</p>
+          <p className="max-w-md text-white/60">{t.gear.desc}</p>
         </div>
 
         <motion.div

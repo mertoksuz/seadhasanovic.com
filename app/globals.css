@@ -51,4 +51,57 @@ body {
   .btn-ghost {
     @apply inline-flex items-center gap-2 rounded-md border border-white/10 px-5 py-3 text-sm font-semibold text-white/90 transition-colors hover:border-rival-500 hover:text-white;
   }
+
+  /* Editorial section marker: "/01 BIO" with a thick red rule */
+  .section-num {
+    @apply flex items-center gap-4 font-display text-sm uppercase tracking-[0.35em] text-white/70;
+  }
+  .section-num::before {
+    content: "";
+    @apply inline-block h-[2px] w-12 bg-rival-500;
+  }
+  .section-num .num {
+    @apply text-rival-500;
+  }
+
+  /* Outlined display text (used for hero "SEAD") */
+  .text-stroke {
+    -webkit-text-stroke: 2px #ffffff;
+    color: transparent;
+  }
+  .text-stroke-rival {
+    -webkit-text-stroke: 2px #e10600;
+    color: transparent;
+  }
+
+  /* Vertical rotated label (left-side rail) */
+  .side-rail {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    @apply font-display text-[11px] uppercase tracking-[0.5em] text-white/40;
+  }
+
+  /* Diagonal red wedge accent */
+  .wedge-red {
+    background: linear-gradient(115deg, #e10600 0%, #e10600 35%, transparent 35.5%);
+  }
+}
+
+/* Film-grain / noise overlay */
+.noise {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
 }

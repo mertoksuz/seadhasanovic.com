@@ -22,7 +22,7 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/70 backdrop-blur"
+      className="sticky top-0 z-50 border-b border-rival-500/30 bg-ink-950/80 backdrop-blur"
     >
       <nav className="container-x flex h-16 items-center justify-between">
         <Link href="#top" className="flex items-center gap-2">

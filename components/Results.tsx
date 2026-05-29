@@ -86,12 +86,16 @@ export default function Results() {
   };
 
   return (
-    <section id="results" className="border-b border-white/5 py-24">
+    <section id="results" className="border-b border-white/5 py-28">
       <div className="container-x">
+        <div className="section-num mb-10">
+          <span className="num">/ 04</span>
+          <span>{t.results.eyebrow}</span>
+        </div>
+
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
-            <span className="eyebrow">{t.results.eyebrow}</span>
-            <h2 className="section-title mt-4">
+            <h2 className="section-title">
               {t.results.title1}{" "}
               <span className="text-rival-500">{t.results.titleAccent}</span>
             </h2>
