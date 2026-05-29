@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global theme baseline */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #070809;
+  color: #e7eaee;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0d10;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3038;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e10600;
+}
+
+/* Reusable utility classes */
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+  .section-title {
+    @apply font-display text-4xl tracking-wide sm:text-5xl;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-rival-400;
+  }
+  .card {
+    @apply rounded-2xl border border-white/5 bg-ink-800/60 p-6 backdrop-blur-sm transition-colors;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-md bg-rival-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-rival-500/20 transition-colors hover:bg-rival-600 focus:outline-none focus:ring-2 focus:ring-rival-400;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-md border border-white/10 px-5 py-3 text-sm font-semibold text-white/90 transition-colors hover:border-rival-500 hover:text-white;
+  }
+}
