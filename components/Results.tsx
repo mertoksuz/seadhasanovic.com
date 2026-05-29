@@ -22,31 +22,121 @@ type Match = {
   classPlace: number;
 };
 
-// TODO: Replace with Sead's real match results
 const matches: Match[] = [
   {
+    date: "2025-12-20",
+    name: "Sarajevo IDPA Winter Games 2025",
+    locKey: "bosnia",
+    classification: "EX",
+    classPlace: 14,
+  },
+  {
+    date: "2025-11-01",
+    name: "II kolo IDPA lige BiH — Zigana Cup 2025",
+    locKey: "bosnia",
+    classification: "MM",
+    classPlace: 3,
+  },
+  {
     date: "2025-09-19",
-    name: "Balkan Cup 2025",
+    name: "Balkan Cup 2025 — Tier 3 powered by Canik",
     tier: "Tier 3",
     locKey: "balkans",
+    classification: "EX",
+    classPlace: 127,
+  },
+  {
+    date: "2025-06-21",
+    name: "B&H IDPA National Championship 2025 — Tier II",
+    tier: "Tier 2",
+    locKey: "bosnia",
+    classification: "EX",
+    classPlace: 30,
+  },
+  {
+    date: "2024-12-21",
+    name: "Sarajevo Winter IDPA Games 2024",
+    locKey: "bosnia",
+    classification: "EX",
+    classPlace: 15,
+  },
+  {
+    date: "2024-09-20",
+    name: "B&H IDPA National Championship 2024",
+    locKey: "bosnia",
+    classification: "EX",
+    classPlace: 29,
+  },
+  {
+    date: "2024-08-03",
+    name: "IV kolo BiH IDPA lige 2024",
+    locKey: "bosnia",
+    classification: "EX",
+    classPlace: 10,
+  },
+  {
+    date: "2024-07-20",
+    name: "IV Kolo Srpske IDPA Lige",
+    locKey: "balkans",
+    classification: "EX",
+    classPlace: 14,
+  },
+  {
+    date: "2024-07-06",
+    name: "III kolo BiH IDPA lige 2024",
+    locKey: "bosnia",
+    classification: "EX",
+    classPlace: 6,
+  },
+  {
+    date: "2024-04-27",
+    name: "I kolo BiH IDPA lige 2024",
+    locKey: "bosnia",
     classification: "EX",
     classPlace: 3,
   },
   {
-    date: "2025-06-21",
-    name: "Bosnia National 2025",
-    tier: "Tier 2",
+    date: "2023-12-02",
+    name: "Sarajevo IDPA Winter Games 2023",
     locKey: "bosnia",
-    classification: "EX",
-    classPlace: 1,
+    classification: "MM",
+    classPlace: 16,
   },
   {
-    date: "2025-05-16",
-    name: "Sarajevo Open 2025",
-    tier: "Tier 2",
+    date: "2023-10-27",
+    name: "Turkish National Championship 2023 — Tier 3",
+    tier: "Tier 3",
+    locKey: "europe",
+    classification: "MM",
+    classPlace: 63,
+  },
+  {
+    date: "2023-09-23",
+    name: "Državno IDPA BiH Championship 2023",
     locKey: "bosnia",
-    classification: "SS",
-    classPlace: 2,
+    classification: "MM",
+    classPlace: 5,
+  },
+  {
+    date: "2023-07-08",
+    name: "II kolo IDPA BiH lige 2023",
+    locKey: "bosnia",
+    classification: "MM",
+    classPlace: 16,
+  },
+  {
+    date: "2023-06-10",
+    name: "I kolo IDPA BiH lige 2023",
+    locKey: "bosnia",
+    classification: "MM",
+    classPlace: 4,
+  },
+  {
+    date: "2022-07-17",
+    name: "4. Kolo Lige Regije BiH 2022",
+    locKey: "bosnia",
+    classification: "MM",
+    classPlace: 35,
   },
 ];
 
@@ -105,6 +195,14 @@ export default function Results() {
               {t.results.desc2}
             </p>
           </div>
+          <a
+            href="https://practiscore.com/clubs/sk_4tactic/results"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost text-sm"
+          >
+            {t.results.practiscore} <ExternalLink className="h-3.5 w-3.5" />
+          </a>
         </div>
 
         <div className="mt-10 overflow-hidden rounded-2xl border border-white/5">
