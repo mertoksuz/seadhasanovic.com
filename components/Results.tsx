@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
-type Classification = "MA" | "EX" | "SS" | "MM" | "NV";
+type Classification = "MA" | "EX" | "SS" | "MM" | "NV"; // SS = Sharpshooter
 type LocKey = "bosnia" | "balkans" | "europe";
 
 type Match = {
@@ -28,14 +28,14 @@ const matches: Match[] = [
     name: "Sarajevo IDPA Winter Games 2025",
     locKey: "bosnia",
     classification: "EX",
-    classPlace: 14,
+    classPlace: 3,   // 3rd of 5 SSP EX
   },
   {
     date: "2025-11-01",
     name: "II kolo IDPA lige BiH — Zigana Cup 2025",
     locKey: "bosnia",
     classification: "MM",
-    classPlace: 3,
+    classPlace: 1,   // 1st of 1 PCC MM
   },
   {
     date: "2025-09-19",
@@ -43,7 +43,7 @@ const matches: Match[] = [
     tier: "Tier 3",
     locKey: "balkans",
     classification: "EX",
-    classPlace: 127,
+    classPlace: 6,   // 6th of 6 SSP EX
   },
   {
     date: "2025-06-21",
@@ -51,92 +51,92 @@ const matches: Match[] = [
     tier: "Tier 2",
     locKey: "bosnia",
     classification: "EX",
-    classPlace: 30,
+    classPlace: 2,   // 2nd of 3 SSP EX
   },
   {
     date: "2024-12-21",
     name: "Sarajevo Winter IDPA Games 2024",
     locKey: "bosnia",
     classification: "EX",
-    classPlace: 15,
+    classPlace: 3,   // 3rd of 5 SSP EX
   },
   {
     date: "2024-09-20",
     name: "B&H IDPA National Championship 2024",
     locKey: "bosnia",
     classification: "EX",
-    classPlace: 29,
+    classPlace: 5,   // 5th of 7 SSP EX
   },
   {
     date: "2024-08-03",
     name: "IV kolo BiH IDPA lige 2024",
     locKey: "bosnia",
     classification: "EX",
-    classPlace: 10,
+    classPlace: 2,   // 2nd of 2 SSP EX
   },
   {
     date: "2024-07-20",
     name: "IV Kolo Srpske IDPA Lige",
     locKey: "balkans",
     classification: "EX",
-    classPlace: 14,
+    classPlace: 1,   // 1st of 8 SSP EX
   },
   {
     date: "2024-07-06",
     name: "III kolo BiH IDPA lige 2024",
     locKey: "bosnia",
     classification: "EX",
-    classPlace: 6,
+    classPlace: 1,   // 1st of 2 SSP EX
   },
   {
     date: "2024-04-27",
     name: "I kolo BiH IDPA lige 2024",
     locKey: "bosnia",
     classification: "EX",
-    classPlace: 3,
+    classPlace: 1,   // 1st of 1 SSP EX
   },
   {
     date: "2023-12-02",
     name: "Sarajevo IDPA Winter Games 2023",
     locKey: "bosnia",
     classification: "MM",
-    classPlace: 16,
+    classPlace: 3,   // 3rd of 4 ESP MM
   },
   {
     date: "2023-10-27",
     name: "Turkish National Championship 2023 — Tier 3",
     tier: "Tier 3",
     locKey: "europe",
-    classification: "MM",
-    classPlace: 63,
+    classification: "SS",
+    classPlace: 15,  // 15th of 24 SSP SS
   },
   {
     date: "2023-09-23",
     name: "Državno IDPA BiH Championship 2023",
     locKey: "bosnia",
-    classification: "MM",
-    classPlace: 5,
+    classification: "SS",
+    classPlace: 3,   // 3rd of 20 SSP SS
   },
   {
     date: "2023-07-08",
     name: "II kolo IDPA BiH lige 2023",
     locKey: "bosnia",
     classification: "MM",
-    classPlace: 16,
+    classPlace: 1,   // 1st of 1 CO MM
   },
   {
     date: "2023-06-10",
     name: "I kolo IDPA BiH lige 2023",
     locKey: "bosnia",
-    classification: "MM",
-    classPlace: 4,
+    classification: "SS",
+    classPlace: 4,   // 4th of 25 SSP SS
   },
   {
     date: "2022-07-17",
     name: "4. Kolo Lige Regije BiH 2022",
     locKey: "bosnia",
     classification: "MM",
-    classPlace: 35,
+    classPlace: 35,  // IPSC format — no class split available
   },
 ];
 
