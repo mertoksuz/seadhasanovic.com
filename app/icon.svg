@@ -1,9 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Tile -->
   <rect width="64" height="64" rx="12" fill="#070809"/>
-  <circle cx="32" cy="32" r="20" fill="none" stroke="#1e90ff" stroke-width="3"/>
-  <circle cx="32" cy="32" r="3" fill="#1e90ff"/>
-  <line x1="32" y1="6" x2="32" y2="20" stroke="#1e90ff" stroke-width="3" stroke-linecap="round"/>
-  <line x1="32" y1="44" x2="32" y2="58" stroke="#1e90ff" stroke-width="3" stroke-linecap="round"/>
-  <line x1="6" y1="32" x2="20" y2="32" stroke="#1e90ff" stroke-width="3" stroke-linecap="round"/>
-  <line x1="44" y1="32" x2="58" y2="32" stroke="#1e90ff" stroke-width="3" stroke-linecap="round"/>
+  <!-- Subtle inner border -->
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="none" stroke="#1a1d22" stroke-width="1"/>
+
+  <!-- SH monogram drawn as paths (no web font dependency) -->
+  <g fill="#ffffff">
+    <!-- S -->
+    <path d="M9 18
+             h14 v5 h-9 v3 h7 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-12 v-5 h11 v-3 h-7 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z"/>
+    <!-- H -->
+    <path d="M34 18 h5 v8 h7 v-8 h5 v22 h-5 v-9 h-7 v9 h-5 z"/>
+  </g>
+
+  <!-- Red accent bar -->
+  <rect x="9" y="48" width="46" height="4" rx="1.5" fill="#e10600"/>
+
+  <!-- Red target dot -->
+  <circle cx="52" cy="14" r="3" fill="#e10600"/>
 </svg>
